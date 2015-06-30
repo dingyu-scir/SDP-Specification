@@ -1,6 +1,8 @@
 Given a complete sentence, semantic dependency parsing(SDP) aims at determining all the word pairs related to each other semantically and assigning specific predefined semantic relations. Semantic dependency analysis represents the meaning of sentences by a collection of dependency word pairs and their corresponding relations. This procedure survives from syntactic variations.
 
-Here we define a Chinese semantic dependency scheme based on Chinese sepecific linguistic knowledge, which represents the meaning of sentences in graphic formats.
+Here we define a Chinese semantic dependency scheme based on Chinese sepecific linguistic knowledge, which represents the meaning of sentences in graphic formats. A complete annotation example is here:
+
+![Example SDP graph](sdp.jpg)
 
 Part I. Structure of Chinese Semantic Dependency Graph
 ======================================================
@@ -10,7 +12,7 @@ We used semantic dependency graphs to represent the meanings of sentences, which
 Figure1:
 --------
 
-![Example SDP graph](dp-sdp.png)
+![Example DP-SDP diff](dp-sdp.png)
 
 Part II. Semantic Dependency Relations
 ======================================
