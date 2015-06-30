@@ -1,3 +1,6 @@
+Given a complete sentence, semantic dependency parsing(SDP) aims at determining all the word pairs related to each other semantically and assigning specific predefined semantic relations. Semantic dependency analysis represents the meaning of sentences by a collection of dependency word pairs and their corresponding relations. This procedure survives from syntactic variations.
+
+Here we define a Chinese semantic dependency scheme based on Chinese sepecific linguistic knowledge, which represents the meaning of sentences in graphic formats.
 
 Part I. Structure of Chinese Semantic Dependency Graph
 ======================================================
@@ -12,7 +15,7 @@ Figure1:
 Part II. Semantic Dependency Relations
 ======================================
 On the basis of <a href="https://www.cs.york.ac.uk/semeval-2012/task5/">SemEval 2012 task 5</a>, we refined the semantic relation set in terms of more solid Chinese
-linguistic theories, except for the reference of HowNet (Dong and Hao, 2010), a popular Chinese semantic thesaurus, we mainly referred to the idea of semantic network of Chinese grammar defined by Lu (2001). He adapted semantic network to Chinese, which is the formal network for “semantic composition systems” by distinguishing the hierarchies of “semantic relations”, “semantic alignment” and “semantic orientation”. We borrowed his ideas of semantic unit classification and semantic combination, and integrated them with the dependency grammar to re-divided boundary for each semantic relation and re-organized the total label set for clarity and definiteness.
+linguistic theories, except for the reference of HowNet (Dong and Hao, 2010), a popular Chinese semantic thesaurus. We mainly referred to the idea of semantic network of Chinese grammar defined by Lu (2001). He adapted semantic network to Chinese, which is the formal network for “semantic composition systems” by distinguishing the hierarchies of “semantic relations”, “semantic alignment” and “semantic orientation”. We borrowed his ideas of semantic unit classification and semantic combination, and integrated them with the dependency grammar to re-divided boundary for each semantic relation and re-organized the total label set for clarity and definiteness.
 
 Semantic units are divided from high to low into event chains, events, arguments, concepts and markers. Arguments refer to noun phrases related to certain predicates. Concepts are simple elements in basic human thought or content words in syntax. Markers represent the meaning attached to entity information conveyed by speakers (e.g., speakers’ tones or moods). These semantic units correspond to compound sentences, simple sentences, chunks, content words and function words. The meaning of sentences is expressed by event chains. Event chains consist of multiple simple sentences. The meaning of simple sentences is expressed by arguments, while arguments are reflected by predicate, referential or defining concepts. Markers are attached to concepts.
 
@@ -63,10 +66,6 @@ All data provided for the task uses a column-based file format, similar to the o
 
 Reference
 =========
-  - Borong Huang and Xudong Liao. 2003. contemporary Chinese language. Higher Education Press.
   - Chuan Lu. 2001. The Semantic Network of Chinese Grammar. The Commercial Printing house.
-  - Joseph L. Fleiss. 1971. Measuring nominal scale agreement among many raters. Psychological bulletin, 76:378.
-  - Nianwen Xue and Martha Palmer. 2003. Annotating the propositions in the Penn Chinese Treebank. Proceedings of the second SIGHAN workshop on Chinese language processing -, 17:47–54.
   - Sabine Buchholz and Erwin Marsi. 2006. Conll-x shared task on multilingual dependency parsing. In Proceedings of the Tenth Conference on Computational Natural Language Learning, pages 149–164. Association for Computational Linguistics.
-  - Wanxiang Che, Meishan Zhang, Yanqiu Shao and Ting Liu. 2012. SemEval-2012 Task 5 : Chinese Semantic Dependency Parsing. In Proceedings of the First Joint Conference on Lexical and Computational Semantics Volume 1: Proceedings of the main conference and the shared task, and Volume 2: Proceedings of the Sixth International Workshop on Semantic Evaluation, pages 378–384.
   - Zhendong Dong, Qiang Dong and Changling Hao. 2010. HowNet and Its Computation of Meaning. In Proceedings of the 23rd International Conference on Computational Linguistics: Demonstrations, pages 53–56.
