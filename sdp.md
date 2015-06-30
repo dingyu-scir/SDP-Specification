@@ -1,5 +1,5 @@
 
-Part I. IntroductionStructure of Chinese Semantic Dependency Graph
+Part I. Structure of Chinese Semantic Dependency Graph
 ==================================================================
 
 We used semantic dependency graphs to represent the meanings of sentences, which contain dependency relations between all the word pairs with direct semantic relations. Predicates includes most predicative constituents (i.e. most verbs and a small number of nouns and adjectives), and arguments are defined as all the possible participants in the real scene corresponding to a certain predicate (e.g. the eater, food, tool, location, time in the scene related to “eat”). One principle of building dependency arcs is to find arguments for predicates in content words preferentially because they are the ones that related to predicates directly. Unlike syntactic dependency, which inserts non-content words between predicate and its “real arguments” (see Fig. 1). Due to the completeness of the representation of relations between words, some words have relations with more than one other word (some words have more than one child, and some have more than one father), which forms direct acyclic graphs finally. We define a set of labels to describe dependency relations between words.
@@ -36,7 +36,8 @@ Figure2：
 --------
 
 ![Example reverse-relations](r-sdp.png)	
-                                    
+![Example reverse-relations](r-sdp2.png)	
+
 Figure3：
 --------
 
