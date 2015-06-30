@@ -1,6 +1,6 @@
 
 Part I. Structure of Chinese Semantic Dependency Graph
-==================================================================
+======================================================
 
 We used semantic dependency graphs to represent the meanings of sentences, which contain dependency relations between all the word pairs with direct semantic relations. Predicates includes most predicative constituents (i.e. most verbs and a small number of nouns and adjectives), and arguments are defined as all the possible participants in the real scene corresponding to a certain predicate (e.g. the eater, food, tool, location, time in the scene related to “eat”). One principle of building dependency arcs is to find arguments for predicates in content words preferentially because they are the ones that related to predicates directly. Unlike syntactic dependency, which inserts non-content words between predicate and its “real arguments” (see Fig. 1). Due to the completeness of the representation of relations between words, some words have relations with more than one other word (some words have more than one child, and some have more than one father), which forms direct acyclic graphs finally. We define a set of labels to describe dependency relations between words.
 
@@ -19,8 +19,8 @@ Semantic units are divided from high to low into event chains, events, arguments
 The meaning of sentences consists of the meaning of semantic units and their combinations, including semantic relations and attachments. Semantic attachments refer to markers on semantic units. Semantic relations are classified into symmetric and asymmetric types. Symmetric relations include coordination, selection, and equivalence relations, while asymmetric relations include:
 
   - Collocational relations occur between core and non-core roles. For example, in “工人 (worker) 修理 (repair) 地下 (pipeline) 管道 (pipeline)” serves as a non-core role, and is the patient of “修理 (repair),” which is a verb and core role. Relations between predicates and nouns belong to collocational relations. Semantic roles usually refer to collocational relations, Table 1 presents the 32 semantic roles we defined, divided into eight small categories. 
-  - Additional relations refer to the modifying relations among concepts within an argument; all semantic roles are available, e.g. in “地下 (underground) 的 (de) 管道 (pipeline),” “地下 (underground)” is the modifier of “管道 (pipeline),” which refers to location relation.
-  - Connectional relations are bridging relations between two events that are neither symmetric nornested relation. For example, for “ 如果 (If) 天气 (weather)好 (good) ，(,) 我 (I) 就 (will) 去 (go) 故宫 (the Summer Palace),” the former event is the hypothesis of the latter. Events in Chinese semantic dependency have 15 relations.
+  - Additional relations refer to the modifying relations among concepts within an argument; all semantic roles are available, e.g. in “地下 (underground) 的 (de) 管道 (pipeline),” “地下 (underground)” is the modifier of “管道 (pipeline),” which refers to location relation.
+  - Connectional relations are bridging relations between two events that are neither symmetric nornested relation. For example, for “ 如果 (If) 天气 (weather)好 (good) ，(,) 我 (I) 就 (will) 去 (go) 故宫 (the Summer Palace),” the former event is the hypothesis of the latter. Events in Chinese semantic dependency have 15 relations.
   
 According to the above classification of sentence hierarchies, we can get to know how each sentence component constitutes the entire meaning of sentences. We design semantic dependency relations in terms of this theoretical basis.
 
