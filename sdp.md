@@ -59,3 +59,14 @@ Part V. Data Format
 All data provided for the task uses a column-based file format, similar to the one of the 2006 CoNLL Shared Task. Each training/developing/testing set is a text file, containing sentences separated by a blank line. Each sentence consists of more than one tokens, and each token is represented on one line consisting of 10 fields. Buchholz and Buchholz and Marsi (2006) provide more detailed information on the format. It’s worth noting that if one word has more than one heads, it will appear in more than one lines in the training/developing/testing files continuously. Fields are separated from each other by a tab. Only five of the 10 fields are used: token id, form, pos tagger, head, and deprel. Head denotes the semantic dependency of each word, and deprel denotes the corresponding semantic relations of the dependency. In the data, the lemma column is filled with the form and the cpostag column with the postag.
 
 ![Example data format](data-format.png)
+
+
+Reference
+=========
+  - Borong Huang and Xudong Liao. 2003. contemporary Chinese language. Higher Education Press.
+  - Chuan Lu. 2001. The Semantic Network of Chinese Grammar. The Commercial Printing house.
+  - Joseph L. Fleiss. 1971. Measuring nominal scale agreement among many raters. Psychological bulletin, 76:378.
+  - Nianwen Xue and Martha Palmer. 2003. Annotating the propositions in the Penn Chinese Treebank. Proceedings of the second SIGHAN workshop on Chinese language processing -, 17:47–54.
+  - Sabine Buchholz and Erwin Marsi. 2006. Conll-x shared task on multilingual dependency parsing. In Proceedings of the Tenth Conference on Computational Natural Language Learning, pages 149–164. Association for Computational Linguistics.
+  - Wanxiang Che, Meishan Zhang, Yanqiu Shao and Ting Liu. 2012. SemEval-2012 Task 5 : Chinese Semantic Dependency Parsing. In Proceedings of the First Joint Conference on Lexical and Computational Semantics Volume 1: Proceedings of the main conference and the shared task, and Volume 2: Proceedings of the Sixth International Workshop on Semantic Evaluation, pages 378–384.
+  - Zhendong Dong, Qiang Dong and Changling Hao. 2010. HowNet and Its Computation of Meaning. In Proceedings of the 23rd International Conference on Computational Linguistics: Demonstrations, pages 53–56.
