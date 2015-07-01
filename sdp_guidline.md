@@ -1,3 +1,12 @@
+BH-SDP guidline
+===============
+
+**2015.04.30**
+
+**BH is the abbreviation of Beijing Language & Culture University and Harbin Insititute of Technology.**
+
+_Yanqiu Shao, Yu Ding_
+
 Given a complete sentence, semantic dependency parsing(SDP) aims at determining all the word pairs related to each other semantically and assigning specific predefined semantic relations. Semantic dependency analysis represents the meaning of sentences by a collection of dependency word pairs and their corresponding relations. This procedure survives from syntactic variations.
 
 Here we define a Chinese semantic dependency scheme based on Chinese sepecific linguistic knowledge, which represents the meaning of sentences in graphic formats. A complete annotation example is here:
